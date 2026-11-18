@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Beyond Looks — thoughtful beauty, hair and self-care services. Book your salon appointment today.">
+  <title>Beyond Looks | Beauty & Hair Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#24231f;--muted:#77736d;--cream:#f7f4ef;--paper:#fffdfa;--rose:#c58f83;--line:#e8e1d8}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1140px,90%);margin:auto}
+    header{position:sticky;top:0;z-index:5;background:#fffdfaee;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:'Playfair Display',serif;font-size:27px;letter-spacing:.3px}.brand span{color:var(--rose)}
+    nav{display:flex;gap:28px;font-size:13px;color:#57534e}nav a:hover{color:var(--rose)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;background:var(--ink);color:white;padding:14px 22px;border-radius:3px;font-size:13px;font-weight:600;border:1px solid var(--ink);transition:.2s;cursor:pointer}.btn:hover{background:var(--rose);border-color:var(--rose)}
+    .btn.light{background:transparent;color:var(--ink);border-color:#bdb4aa}.btn.light:hover{color:white}
+    .hero{background:var(--cream);padding:74px 0 76px}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:58px;align-items:center}
+    .eyebrow{text-transform:uppercase;letter-spacing:2.5px;font-size:10px;font-weight:700;color:var(--rose)}
+    h1,h2,h3{font-family:'Playfair Display',serif;font-weight:500}h1{font-size:clamp(48px,6vw,76px);line-height:1.06;margin:18px 0 20px;letter-spacing:-1.5px}
+    .hero p{max-width:470px;color:var(--muted);line-height:1.85;font-size:15px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .hero-photo{height:510px;position:relative;background:#e5d9d0;overflow:hidden}.hero-photo img{width:100%;height:100%;object-fit:cover;display:block}.photo-note{position:absolute;bottom:20px;left:20px;background:#fffdfaee;padding:14px 18px;font-family:'Playfair Display',serif;font-size:18px}
+    section{padding:88px 0}.section-head{text-align:center;max-width:620px;margin:0 auto 42px}.section-head h2{font-size:clamp(34px,4vw,48px);margin:12px 0}.section-head p{color:var(--muted);line-height:1.8;font-size:14px}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{padding:28px 24px;border:1px solid var(--line);background:white;min-height:190px}.service .num{font-size:11px;color:var(--rose);letter-spacing:1px}.service h3{font-size:24px;margin:18px 0 8px}.service p{font-size:13px;line-height:1.7;color:var(--muted);margin:0}
+    .about{background:var(--cream)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}.about-img{height:430px;background:#e7ddd4}.about-img img{width:100%;height:100%;object-fit:cover}.about-copy h2{font-size:44px;line-height:1.15;margin:14px 0}.about-copy p{color:var(--muted);font-size:14px;line-height:1.9}
+    .gallery{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:14px}.gallery img{width:100%;height:300px;object-fit:cover}.gallery img:first-child{height:390px;grid-row:span 2}
+    .booking{background:#292824;color:white}.booking .section-head p{color:#c7c1b9}.booking-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start}.booking h2{font-size:45px;margin:12px 0}.booking-copy p{color:#c7c1b9;line-height:1.8;font-size:14px}.contact-line{margin-top:25px;color:#e9e3db;font-size:13px}
+    form{background:#fffdfa;color:var(--ink);padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:16px}form label{display:block;font-size:11px;font-weight:700;margin-bottom:7px;color:#625d56}form input,form select,form textarea{width:100%;border:1px solid var(--line);padding:13px;font:13px 'DM Sans',sans-serif;background:white;border-radius:2px}form textarea{min-height:90px;resize:vertical}.full{grid-column:1/-1}form button{grid-column:1/-1;width:100%}
+    footer{padding:28px 0;background:#1f1e1b;color:#c7c1b9;font-size:12px}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .whatsapp{position:fixed;right:22px;bottom:22px;z-index:6;background:#287d55;color:white;border-radius:30px;padding:13px 18px;font-size:12px;font-weight:700;box-shadow:0 8px 24px #0002}
+    @media(max-width:760px){nav{display:none}.hero{padding:45px 0}.hero-grid,.about-grid,.booking-grid{grid-template-columns:1fr;gap:30px}.hero-photo{height:370px}.services{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}.gallery img,.gallery img:first-child{height:230px;grid-row:auto}.booking-grid{gap:24px}section{padding:65px 0}form{padding:20px}}
+    @media(max-width:480px){.services{grid-template-columns:1fr}form{grid-template-columns:1fr}.full,form button{grid-column:auto}.brand{font-size:23px}.hero-photo{height:310px}.actions .btn{width:100%}}
+  </style>
+</head>
+<body>
+  <!-- IMPORTANT: Replace the WhatsApp number in the script at the bottom before publishing. -->
+  <header><div class="wrap nav">
+    <a class="brand" href="#">beyond <span>looks.</span></a>
+    <nav><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#book">Contact</a></nav>
+    <a class="btn" href="#book">Book an appointment</a>
+  </div></header>
+
+  <main>
+    <section class="hero" id="home"><div class="wrap hero-grid">
+      <div><div class="eyebrow">Beauty • Hair • Self-care</div>
+        <h1>Feel good.<br>Look beyond.</h1>
+        <p>A little time for yourself can change everything. Discover thoughtful beauty and hair services in a calm, welcoming space at Beyond Looks.</p>
+        <div class="actions"><a class="btn" href="#book">Book your visit</a><a class="btn light" href="#services">Explore services</a></div>
+      </div>
+      <div class="hero-photo"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=85" alt="Elegant modern beauty salon interior"><div class="photo-note">Your moment. Your glow.</div></div>
+    </div></section>
+
+    <section id="services"><div class="wrap">
+      <div class="section-head"><div class="eyebrow">What we do</div><h2>Care that brings out you</h2><p>From everyday grooming to occasion-ready looks, explore salon services at Beyond Looks.</p></div>
+      <div class="services">
+        <article class="service"><div class="num">01 / HAIR</div><h3>Haircuts & styling</h3><p>Haircuts, hair wash, blow-dry and styling for women, men and kids.</p></article>
+        <article class="service"><div class="num">02 / HAIR CARE</div><h3>Hair treatments</h3><p>Keratin, smoothing and other hair-care treatments. Ask us about the right option for you.</p></article>
+        <article class="service"><div class="num">03 / SKIN</div><h3>Facials & clean-ups</h3><p>Facial and skin-care services to refresh your look and feel.</p></article>
+        <article class="service"><div class="num">04 / BEAUTY</div><h3>Threading & waxing</h3><p>Everyday grooming and hair-removal services with a thoughtful approach.</p></article>
+        <article class="service"><div class="num">05 / MAKEUP</div><h3>Makeup & nails</h3><p>Makeup, nail extensions, manicure and pedicure for your special moments.</p></article>
+        <article class="service"><div class="num">06 / YOU</div><h3>Pre-bridal care</h3><p>Beauty services and preparation for your wedding and celebrations.</p></article>
+      </div>
+    </div></section>
+
+    <section class="about" id="about"><div class="wrap about-grid">
+      <div class="about-img"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1000&q=85" alt="Stylist working in a salon"></div>
+      <div class="about-copy"><div class="eyebrow">A little about us</div><h2>Beauty is personal.<br>So is our care.</h2><p>Beyond Looks is a unisex salon in Sector 51, Noida, offering hair, skin, beauty and grooming services. Whether you are visiting for a haircut, a hair treatment or occasion-ready styling, our team is here to help you find the look that feels right.</p><p>Visit us at Hoshiarpur Village, near Anytime Fitness Gym and Spencer’s Store.</p><a class="btn" href="#book">Let's connect</a></div>
+    </div></section>
+
+    <section id="gallery"><div class="wrap">
+      <div class="section-head"><div class="eyebrow">The space & the details</div><h2>A glimpse of the glow</h2><p>Replace these sample photos with real salon, team and client-work images for the strongest result.</p></div>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=1000&q=85" alt="Modern salon styling station">
+        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=700&q=85" alt="Beauty portrait">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=85" alt="Hair styling">
+      </div>
+    </div></section>
+
+    <section class="booking" id="book"><div class="wrap booking-grid">
+      <div class="booking-copy"><div class="eyebrow">We'd love to see you</div><h2>Let's make time for you.</h2><p>Send an appointment request and we'll continue the conversation on WhatsApp to confirm your preferred date and time.</p><div class="contact-line">📍 Ground Floor, C-4, near Anytime Fitness Gym, Hoshiarpur Village, Sector 51, Noida, Uttar Pradesh 201303<br><br>☎ <a href="tel:+919999269998">+91 99992 69998</a><br>◷ Daily, 9:00 AM – 9:00 PM<br><br><a href="https://maps.app.goo.gl/B4rZTCEJ3NCoKuMY7" target="_blank" rel="noopener" style="text-decoration:underline">Get directions on Google Maps ↗</a></div></div>
+      <form id="bookingForm">
+        <div><label for="name">Your name</label><input id="name" name="name" placeholder="Enter your name" required></div>
+        <div><label for="phone">Phone number</label><input id="phone" name="phone" placeholder="Your contact number" required></div>
+        <div><label for="service">Choose a service</label><select id="service" name="service" required><option value="">Select service</option><option>Hair styling</option><option>Hair treatments</option><option>Facials & skin</option><option>Beauty essentials</option><option>Makeup</option><option>Personal consultation</option></select></div>
+        <div><label for="date">Preferred date</label><input id="date" name="date" type="date" required></div>
+        <div class="full"><label for="message">Anything else? (optional)</label><textarea id="message" name="message" placeholder="Preferred time or any details"></textarea></div>
+        <button class="btn" type="submit">Request appointment on WhatsApp</button>
+      </form>
+    </div></section>
+  </main>
+
+  <footer><div class="wrap footer-row"><span>© <span id="year"></span> Beyond Looks. All rights reserved.</span><span>Beauty • Hair • Self-care</span></div></footer>
+  <a class="whatsapp" id="whatsappLink" href="#" target="_blank" rel="noopener">Chat on WhatsApp ↗</a>
+  <script>
+    // Replace 91XXXXXXXXXX with the salon's WhatsApp number, including country code, no + or spaces.
+    const WHATSAPP_NUMBER = "919999269998";
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const waUrl = "https://wa.me/" + WHATSAPP_NUMBER;
+    document.getElementById("whatsappLink").href = waUrl;
+    document.getElementById("bookingForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      if (WHATSAPP_NUMBER.includes("X")) {
+        alert("Please add the salon's WhatsApp number in the website code first.");
+        return;
+      }
+      const data = new FormData(event.target);
+      const message = `Hello Beyond Looks! I'd like to request an appointment.\nName: ${data.get("name")}\nPhone: ${data.get("phone")}\nService: ${data.get("service")}\nPreferred date: ${data.get("date")}\nDetails: ${data.get("message") || "None"}`;
+      window.open(waUrl + "?text=" + encodeURIComponent(message), "_blank");
+    });
+  </script>
+</body>
+</html>
